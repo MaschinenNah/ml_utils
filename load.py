@@ -13,3 +13,5 @@ def img_path_to_np_array(path):
   img = Image.open(path)
   img_as_array = np.array(img)
   return (img_as_array / 255.0).astype("float32")
+
+# klappts?
