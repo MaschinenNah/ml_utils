@@ -2,6 +2,7 @@ from io import BytesIO
 from urllib.request import urlopen
 from zipfile import ZipFile
 from PIL import Image
+import numpy as np
 
 def load_and_unzip_from_url(zipurl):
   with urlopen(zipurl) as zipresp:
