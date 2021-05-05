@@ -20,3 +20,5 @@ def all_abs_paths_in_dir(dir_):
   return [os.path.join(dir_, filename) for filename in filenames]
 
 # veränderung 1
+
+# veränderung 2
