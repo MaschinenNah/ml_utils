@@ -8,3 +8,5 @@ def grayscale_to_rgb(np_array):
 
 def add_color_channel(np_array):
   return np_array[..., None]
+
+# veränderung 1
