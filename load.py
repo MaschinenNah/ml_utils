@@ -24,3 +24,5 @@ def all_abs_paths_in_dir(dir_):
 # veränderung 2
 
 # veränderung 3
+
+# veränderung 4
