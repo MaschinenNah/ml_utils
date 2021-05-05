@@ -40,9 +40,7 @@ def show_and_compare_batch(batch, width=4):
 
 def show_frame_prediction_batch(batch):
   n_rows = batch[0].shape[0]
-  print("n_rows", n_rows)
   n_columns = batch[0][0].shape[0]+1
-  print("n_columns", n_columns)
 
   fig = plt.figure(figsize=(n_columns, n_rows*1.5))
   
@@ -54,10 +52,7 @@ def show_frame_prediction_batch(batch):
       plt.yticks(())
       img = batch[0][row][column]
       plt.imshow(img, cmap="gray")
-    #print("row", row)
     subplot_idx = (n_columns * (row)) + n_columns
-    #print(subplot_idx)
-    #print()
     plt.subplot(n_rows+1, n_columns, subplot_idx)
     img = batch[1][row]
     plt.imshow(img, cmap="gray")
