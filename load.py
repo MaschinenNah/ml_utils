@@ -33,5 +33,3 @@ def commit_to_github(file):
   !git remote add origin https://MaschinenNah:{github_pw}@github.com/MaschinenNah/ml_utils.git
   !git push -u origin main
   %cd /content
-
-commit_to_github("frame_prediction.py");
