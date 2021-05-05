@@ -61,3 +61,5 @@ def show_frame_prediction_batch(batch):
     plt.yticks(())
 
 # veränderung 1
+
+# veränderung 2
