@@ -10,3 +10,5 @@ def add_color_channel(np_array):
   return np_array[..., None]
 
 # veränderung 1
+
+# veränderung 2
