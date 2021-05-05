@@ -19,3 +19,5 @@ def img_path_to_np_array(path):
 def all_abs_paths_in_dir(dir_):
   filenames = os.listdir(dir_)
   return [os.path.join(dir_, filename) for filename in filenames]
+
+# veraenderung!
