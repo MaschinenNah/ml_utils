@@ -59,3 +59,5 @@ def show_frame_prediction_batch(batch):
     plt.title("y")
     plt.xticks(())
     plt.yticks(())
+
+# veränderung 1
