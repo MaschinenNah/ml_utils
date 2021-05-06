@@ -83,12 +83,14 @@ class FramePredictionGenerator(Sequence):
         for frame_idx, img_path in enumerate(example[:-1]):
           rgb = load.img_path_to_np_array(img_path)
           grayscale = convert.rgb_to_grayscale(rgb)
-          batch_x[example_idx, frame_idx] = grayscale
+          reshaped = grayscale.reshape((self.frame_shape))
+          batch_x[example_idx, frame_idx] = reshaped
         # Befüllen von batch_y:
         img_path = example[-1]
         rgb = load.img_path_to_np_array(img_path)
         grayscale = convert.rgb_to_grayscale(rgb)
-        batch_y[example_idx] = grayscale
+        reshaped = grayscale.reshape((self.frame_shape))
+        batch_y[example_idx] = reshaped
 
     return batch_x, batch_y
 
