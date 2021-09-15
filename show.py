@@ -15,7 +15,7 @@ def show_images_from_np_array(np_array, title, width=8, img_limit=999999):
     plt.subplot(n_images_sqrt, n_images_sqrt, x+1)
     plt.xticks(())
     plt.yticks(())
-    plt.imshow(np_array[x], cmap=cmap)
+    plt.imshow(np_array[x], cmap=cmap, vmin=0, vmax=1)
   
   fig.suptitle(title, fontsize=16)
 
